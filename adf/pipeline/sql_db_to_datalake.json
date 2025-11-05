@@ -1,5 +1,5 @@
 {
-	"name": "sl_db_to_datalake",
+	"name": "sql_db_to_datalake",
 	"properties": {
 		"activities": [
 			{

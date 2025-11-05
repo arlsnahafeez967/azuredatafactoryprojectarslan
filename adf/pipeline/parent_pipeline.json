@@ -76,7 +76,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "sl_db_to_datalake",
+						"referenceName": "sql_db_to_datalake",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
