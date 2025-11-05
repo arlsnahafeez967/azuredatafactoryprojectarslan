@@ -1,0 +1,34 @@
+{
+	"name": "ds_DimAirline",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adfstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "DimAirline",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "airline_id",
+				"type": "INT_16"
+			},
+			{
+				"name": "airline_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "country",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

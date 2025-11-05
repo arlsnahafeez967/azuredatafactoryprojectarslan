@@ -1,0 +1,9 @@
+{
+	"name": "azuredatafactoryprojectarslan",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9d9055c1-6931-42ae-9f4b-ae24294deb14",
+		"tenantId": "656f11bc-6d00-40a6-911b-ffda25485012"
+	}
+}

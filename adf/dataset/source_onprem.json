@@ -1,0 +1,31 @@
+{
+	"name": "source_onprem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onpremisesarslan",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"files_onprem": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": {
+					"value": "@dataset().files_onprem",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

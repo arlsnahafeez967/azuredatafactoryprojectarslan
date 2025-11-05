@@ -1,0 +1,22 @@
+{
+	"name": "dest_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adfstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "first_copy.parquet",
+				"folderPath": "on_prem",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

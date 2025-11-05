@@ -1,0 +1,28 @@
+{
+	"name": "lookup_date",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adfstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "lastloaded.json",
+				"folderPath": "monitoring/lastloaded",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"value": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
