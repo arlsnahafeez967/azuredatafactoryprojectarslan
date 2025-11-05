@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "azuredatafactoryprojectarslan"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"ls_AzureSqlDatabase_password": {
+			"value": ""
+		},
+		"ls_adfstorage_accountKey": {
+			"value": ""
+		},
+		"ls_onpremisesarslan_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adfprojectstorage.dfs.core.windows.net/"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "adfprojectserverarslan.database.windows.net"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "adfprojectbase"
+		},
+		"ls_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		},
+		"ls_adfstorage_properties_typeProperties_url": {
+			"value": "https://adfprojectstorage.dfs.core.windows.net/"
+		},
+		"ls_api_source_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"ls_onpremisesarslan_properties_typeProperties_host": {
+			"value": "C:\\datafactory_files"
+		},
+		"ls_onpremisesarslan_properties_typeProperties_userId": {
+			"value": "arslanhafeez252000@gmail.com"
+		}
+	}
+}
